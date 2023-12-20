@@ -4,7 +4,7 @@
 print('AppEngine Version: ' .. Engine.getVersion())
 
 -- Create a viewer
-local viewer = View.create('viewer2D1')
+local viewer = View.create()
 
 --End of Global Scope-----------------------------------------------------------
 
@@ -38,7 +38,7 @@ local function main()
   --composer:setFusionMethod("BLEND")
   --composer:setInterpolationMethod("LINEAR")
 
-  -- Function that handles adding images from one camera
+  ---Function that handles adding images from one camera
   local function addOneCamera(stitcher, cameraName, id, offsets)
 
     -- Load the the base camera model
